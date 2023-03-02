@@ -18,6 +18,7 @@
         event.preventDefault();
         const filename = document.getElementById('filename').value;
 //         const websiteUrl = websiteUrlTemplate.replace('{deviceuid}', encodeURIComponent(filename));
+        const websiteUrl = websiteUrlTemplate;
         try {
           const response = await fetch(websiteUrl);
           const html = await response.text();
