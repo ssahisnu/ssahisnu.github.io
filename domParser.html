@@ -17,7 +17,7 @@
       form.addEventListener('submit', async (event) => {
         event.preventDefault();
         const filename = document.getElementById('filename').value;
-        const websiteUrl = websiteUrlTemplate.replace('{deviceuid}', encodeURIComponent(filename));
+//         const websiteUrl = websiteUrlTemplate.replace('{deviceuid}', encodeURIComponent(filename));
         try {
           const response = await fetch(websiteUrl);
           const html = await response.text();
